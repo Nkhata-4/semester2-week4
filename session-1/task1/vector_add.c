@@ -9,7 +9,12 @@
     float a[]={ 1.0,1.0,1.0,1.0,1.0 };
     float b[]={ 2.0,3.0,4.0,5.0,6.0 };
     float c[5];
+    int k;
 
+    for (k=0; k<5; ++k) {
+      c[k] = a[k] + b[k];
+    }
+    printf("Vector c: %f\n", c[k]);
     /*
     Code to compute the sum
     Store your answer in array c

@@ -9,6 +9,12 @@
     float a[4][4];
     float b[4][4];
     float c[4][4];
+    
+    float b[0][0] = 1.0;
+    float a[0][0] = 1.0;
+    c[0][0] = a[0][0] + b[0][0];
+    printf("Matrix c %f\n", c[0][0]);
+
 
     /*
     Intialise the matrix a and b entries to 1. 
