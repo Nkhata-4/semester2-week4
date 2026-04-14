@@ -9,13 +9,21 @@
     float a[4][4];
     float b[4][4];
     float c[4][4];
-    
-    float b[0][0] = 1.0;
-    float a[0][0] = 1.0;
+    /*
+    b[0][0] = 1.0;
+    a[0][0] = 1.0;
     c[0][0] = a[0][0] + b[0][0];
     printf("Matrix c %f\n", c[0][0]);
-
-
+   */
+   for (int i=0; i<4; ++i) {
+      for (int j=0; j<4; ++j) {
+         a[i][j] = 1.0;
+         b[i][j] = 1.0;
+         c[i][j] = a[i][j] + b[i][j];
+         printf("c[%d][%d] = %.1f\n", i, j, c[i][j]);
+      }
+   }
+   
     /*
     Intialise the matrix a and b entries to 1. 
     Write code to compute the sum.
