@@ -4,6 +4,7 @@
  */
 
  #include <stdio.h>
+ #include <stdlib.h>
 
  int main( void ) {
     int n = 5;
@@ -22,6 +23,12 @@
     Store your answer in d
     print your final answer
     */
+    for (int k=0; k<n; ++k) {
+      a[n]=3.0;
+      b[n]=2.0;
+      d[n]+=a[n]*b[n];
+      printf("dot product = %.2f at %d\n", d[n], k);
+    }
 
     // explicit deallocation of heap memory before exit */
     free(a);
